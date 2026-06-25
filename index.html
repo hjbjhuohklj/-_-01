@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Сообщаем браузеру, что страница поддерживает обе схемы -->
+  <meta name="color-scheme" content="light dark">
+  <title>Виды мёда и их польза</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Виды мёда</h1>
+      <nav>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О мёде</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+  </ul>
+</nav>
+    <button id="theme-toggle" aria-label="Переключить тему">Тёмная тема</button>
+  </header>
+  <main>
+    <section>
+    <h2>Полезный натуральный мёд</h2>
+    <img src="../sources/images/meda.jpeg" alt="Натуральный мёд">
+    <div class="card">
+      <p>Мёд - натуральный продукт, который создают пчелы. Дикий мёд собирали еще 15 000 лет назад. Самое древнее свидетельство - наскальная живопись эпохи мезолита.</p>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Якутович С.И., 2026</p> 
+</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
